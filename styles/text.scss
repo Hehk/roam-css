@@ -26,15 +26,22 @@ textarea.rm-block__input,
   font-weight: bold;
   margin: 8 * $unit 0 !important;
   line-height: $font-size-heading;
+  height: $font-size-heading;
   span {
     line-height: $font-size-heading;
+  }
+  textarea {
+    font-family: $font-family-heading;
+    font-size: $font-size-heading;
+    line-height: $font-size-heading;
+    height: 10 * $unit !important;
   }
 }
 
 a, .rm-page-ref--link, .rm-page-ref {
-  color: var(--color-black);
+  color: $color-black;
   text-decoration: none;
-  background-image: linear-gradient(var(--color-black), var(--color-black));
+  background-image: linear-gradient($color-black, $color-black);
   background-size: 1px 1px;
   background-repeat: repeat-x;
   background-position: 0% calc(100% - 0.1em);
@@ -45,8 +52,8 @@ a, .rm-page-ref--link, .rm-page-ref {
 }
 
 textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-ref--link::selection, .rm-page-ref::selection {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: $color-black;
+  color: $color-white;
   text-shadow: none;
 }
 
@@ -55,11 +62,11 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 .block-highlight-blue .roam-block a,
 .block-highlight-blue .rm-page-ref--link,
 .block-highlight-blue .rm-page-ref {
-  color: var(--color-white);
+  color: $color-white;
   text-shadow: none;
 }
 .block-highlight-blue {
-  background-color: var(--color-black);
+  background-color: $color-black;
 }
 .roam-block-container {
   border-radius: 0;
@@ -71,6 +78,6 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .rm-hr {
   border-bottom: 0;
-  border-top: 1px solid var(--color-black);
+  border-top: 1px solid $color-black;
   margin: calc(1rem - 1px) 0 1rem 0;
 }

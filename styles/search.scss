@@ -25,14 +25,14 @@
 
   .bp3-menu {
     padding: 0;
-    border: 1px solid var(--color-black);
+    border: 1px solid $color-black;
     border-top: 0px;
     border-radius: 0;
     box-shadow: none;
   }
   .rm-menu-item .rm-search-title {
-    font-family: var(--font-family);
-    font-size: var(--font-size);
+    font-family: $font-family;
+    font-size: $font-size;
     font-weight: normal;
     line-height: 2rem;
   }
@@ -42,15 +42,15 @@
     border-radius: 0;
   }
   .rm-menu-item .rm-search-list-item {
-    color: var(--color-black);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
+    color: $color-black;
+    font-family: $font-family;
+    font-size: $font-size;
     min-height: 2rem;
     line-height: 2rem;
   }
 
   .rm-menu-item .rm-search-title .rm-label {
-    color: var(--color-black);
+    color: $color-black;
     font-weight: bold;
   }
 
@@ -61,12 +61,12 @@
 
 #find-or-create-input {
   border-radius: 0;
-  border: 1px solid var(--color-black);
+  border: 1px solid $color-black;
   box-shadow: none;
   height: 4rem;
   line-height: 4rem;
-  font-size: var(--font-size-heading);
-  font-family: var(--font-family-heading);
+  font-size: $font-size-heading;
+  font-family: $font-family-heading;
 }
 
 .bp3-popover {

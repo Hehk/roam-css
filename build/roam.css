@@ -72,15 +72,22 @@ textarea.rm-block__input,
   font-weight: bold;
   margin: 32px 0 !important;
   line-height: 2rem;
+  height: 2rem;
 }
 .rm-title-display span, .rm-title-editing-display span {
   line-height: 2rem;
 }
+.rm-title-display textarea, .rm-title-editing-display textarea {
+  font-family: "Source Sans Pro";
+  font-size: 2rem;
+  line-height: 2rem;
+  height: 40px !important;
+}
 
 a, .rm-page-ref--link, .rm-page-ref {
-  color: var(--color-black);
+  color: #272727;
   text-decoration: none;
-  background-image: linear-gradient(var(--color-black), var(--color-black));
+  background-image: linear-gradient(#272727, #272727);
   background-size: 1px 1px;
   background-repeat: repeat-x;
   background-position: 0% calc(100% - 0.1em);
@@ -90,8 +97,8 @@ a, .rm-page-ref--link, .rm-page-ref {
 }
 
 textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-ref--link::selection, .rm-page-ref::selection {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: #272727;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -100,12 +107,12 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 .block-highlight-blue .roam-block a,
 .block-highlight-blue .rm-page-ref--link,
 .block-highlight-blue .rm-page-ref {
-  color: var(--color-white);
+  color: #fff;
   text-shadow: none;
 }
 
 .block-highlight-blue {
-  background-color: var(--color-black);
+  background-color: #272727;
 }
 
 .roam-block-container {
@@ -118,7 +125,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .rm-hr {
   border-bottom: 0;
-  border-top: 1px solid var(--color-black);
+  border-top: 1px solid #272727;
   margin: calc(1rem - 1px) 0 1rem 0;
 }
 
@@ -166,14 +173,14 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 .rm-find-or-create-wrapper .bp3-menu {
   padding: 0;
-  border: 1px solid var(--color-black);
+  border: 1px solid #272727;
   border-top: 0px;
   border-radius: 0;
   box-shadow: none;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-title {
-  font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-family: "Source Serif Pro";
+  font-size: 16px;
   font-weight: normal;
   line-height: 2rem;
 }
@@ -182,14 +189,14 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   border-radius: 0;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
-  color: var(--color-black);
-  font-family: var(--font-family);
-  font-size: var(--font-size);
+  color: #272727;
+  font-family: "Source Serif Pro";
+  font-size: 16px;
   min-height: 2rem;
   line-height: 2rem;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-label {
-  color: var(--color-black);
+  color: #272727;
   font-weight: bold;
 }
 .rm-find-or-create-wrapper .bp3-icon.bp3-icon-search.search-icon {
@@ -198,12 +205,12 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 #find-or-create-input {
   border-radius: 0;
-  border: 1px solid var(--color-black);
+  border: 1px solid #272727;
   box-shadow: none;
   height: 4rem;
   line-height: 4rem;
-  font-size: var(--font-size-heading);
-  font-family: var(--font-family-heading);
+  font-size: 2rem;
+  font-family: "Source Sans Pro";
 }
 
 .bp3-popover {
