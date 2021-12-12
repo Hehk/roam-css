@@ -1,10 +1,5 @@
 // Making the pomo OK until i have a good timer component made
 
-// May be an overspecific selector, but this gets the div containin the pomo timer
-.rm-block-text span div {
-  display: inline;
-}
-
 .rm-pomodoro, .rm-pomodoro.running, .rm-pomodoro.break {
   border: 1px solid $color-black;
   padding: 0 $unit 0 0;

@@ -236,10 +236,6 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   flex: unset;
 }
 
-.rm-block-text span div {
-  display: inline;
-}
-
 .rm-pomodoro, .rm-pomodoro.running, .rm-pomodoro.break {
   border: 1px solid #272727;
   padding: 0 4px 0 0;
