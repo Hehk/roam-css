@@ -1,0 +1,12 @@
+{
+  "name": "roam-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "sass index.scss build/roam.css"
+  },
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
