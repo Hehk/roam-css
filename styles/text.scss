@@ -1,0 +1,76 @@
+.roam-block {
+  padding: 0;
+}
+
+textarea.rm-block__input,
+.rm-block__input {
+  margin: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color-black;
+  line-height: 1.5rem;
+  min-height: 1.5rem;
+  display: block;
+  padding: $unit 0;
+
+  .rm-heading-level-1>.rm-block__self & {
+    font-family: $font-family-heading;
+    font-size: $font-size;
+    font-weight: bold;
+  }
+}
+
+.rm-title-display, .rm-title-editing-display {
+  font-family: $font-family-heading;
+  font-size: $font-size-heading;
+  font-weight: bold;
+  margin: 8 * $unit 0 !important;
+  line-height: $font-size-heading;
+  span {
+    line-height: $font-size-heading;
+  }
+}
+
+a, .rm-page-ref--link, .rm-page-ref {
+  color: var(--color-black);
+  text-decoration: none;
+  background-image: linear-gradient(var(--color-black), var(--color-black));
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% calc(100% - 0.1em);
+  /* Makes text overlap the underline */
+  text-shadow:  0 0.05em #fff, 0.05em 0.05em #fff, -0.05em 0.05em
+ #fff, 0.17em 0.05em #fff, -0.17em 0.05em #fff, 0.17em 0 #fff, -0.17em 0 #fff;
+  font-variant-numeric: lining-nums;
+}
+
+textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-ref--link::selection, .rm-page-ref::selection {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-shadow: none;
+}
+
+.block-highlight-blue textarea.rm-block__input,
+.block-highlight-blue .rm-block__input>span,
+.block-highlight-blue .roam-block a,
+.block-highlight-blue .rm-page-ref--link,
+.block-highlight-blue .rm-page-ref {
+  color: var(--color-white);
+  text-shadow: none;
+}
+.block-highlight-blue {
+  background-color: var(--color-black);
+}
+.roam-block-container {
+  border-radius: 0;
+}
+
+.rm-page-ref--link:hover, rm-page-ref:hover {
+  text-decoration: none;
+}
+
+.rm-hr {
+  border-bottom: 0;
+  border-top: 1px solid var(--color-black);
+  margin: calc(1rem - 1px) 0 1rem 0;
+}

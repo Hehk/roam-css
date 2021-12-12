@@ -1,12 +1,15 @@
 {
   "name": "roam-css",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dev.js",
   "license": "MIT",
   "scripts": {
-    "build": "sass index.scss build/roam.css"
+    "build": "sass index.scss build/roam.css",
+    "dev": "micro"
   },
   "devDependencies": {
+    "micro": "^9.3.4",
+    "micro-cors": "^0.1.1",
     "sass": "^1.45.0"
   }
 }

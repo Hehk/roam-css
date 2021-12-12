@@ -1,0 +1,16 @@
+.kanban-board {
+  background-color: transparent;
+}
+.kanban-column {
+  background-color: transparent;
+}
+.kanban-card {
+  border: 1px solid $color-black;
+  margin: 0px;
+}
+.kanban-title {
+  border-color: $color-black;
+  font-family: $font-family-heading;
+  font-weight: bold;
+  text-align: left;
+}

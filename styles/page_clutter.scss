@@ -1,0 +1,43 @@
+// Handling all the stuff that clutters up the page. I don't care for/use the buller points of indent lines much,
+// so I don't want to see them
+
+// Just removing the multibar entirely
+.rm-multibar {
+  border-color: transparent;
+  pointer-events: none;
+}
+
+/* Fixing the bullets to disappear by default and not take up horizontal space */
+.roam-body .roam-app .roam-main .roam-article {
+  padding: 0;
+}
+.rm-title-display, .rm-title-editing-display {
+  padding-left: $unit * 4;
+}
+
+.rm-bullet {
+  height: 1.5rem;
+  margin: 0;
+  line-height: 1.5rem;
+
+  .rm-bullet__inner {
+    background-color: transparent;
+    position: relative;
+    top: 3px;
+    .controls rm-block__controls:hover & {
+      background: var(--color-gray);
+    }
+  }
+}
+
+.rm-block__controls {
+  padding: 0;
+}
+
+.check-container input:checked~.checkmark {
+  background-color: var(--color-black);
+}
+
+.rm-block__children.rm-level-0 {
+  margin-left: -6 * $unit;
+}

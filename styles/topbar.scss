@@ -1,0 +1,20 @@
+.rm-files-dropzone {
+  position: absolute;
+  height: 45px;
+  top: 0px;
+  z-index: 2;
+  transition: $transition;
+}
+.rm-topbar {
+  position: relative;
+  top: -45px;
+  background-color: #fff;
+}
+.rm-files-dropzone:hover .rm-topbar {
+  top: 0px;
+}
+
+/* Remove the calc(100% - 45px)*/
+.roam-body .roam-app .roam-body-main {
+  flex: unset;
+}

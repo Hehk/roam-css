@@ -1,0 +1,20 @@
+$color-pink: #EF476F;
+$color-yellow: #FFD166;
+$color-green: #06D6A0;
+$color-blue: #118AB2;
+$color-dark-blue: #073B4C;
+$color-black: rgb(39, 39, 39);
+$color-white: #fff;
+$color-light-gray: #e4e4e4;
+$color-gray: #bbb;
+
+$unit: 4px;
+$font-family: 'Source Serif Pro';
+$font-family-heading: 'Source Sans Pro';
+$font-size: 4 * $unit;
+$font-size-heading: 2rem;
+// Set so that REM is all nice 
+html { font-size: $font-size }
+
+$link-shadow: #fff;
+$transition: 0.25s;
