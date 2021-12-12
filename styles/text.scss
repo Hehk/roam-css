@@ -81,3 +81,9 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   border-top: 1px solid $color-black;
   margin: calc(1rem - 1px) 0 1rem 0;
 }
+
+// I don't like my block refs being slightly misaligned from things
+.rm-block-ref {
+  padding: 0;
+  margin: 0;
+}

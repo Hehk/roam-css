@@ -125,6 +125,11 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   margin: calc(1rem - 1px) 0 1rem 0;
 }
 
+.rm-block-ref {
+  padding: 0;
+  margin: 0;
+}
+
 .kanban-board {
   background-color: transparent;
 }
