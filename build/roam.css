@@ -36,10 +36,6 @@ html {
   padding: 0;
 }
 
-.check-container input:checked ~ .checkmark {
-  background-color: var(--color-black);
-}
-
 .rm-block__children.rm-level-0 {
   margin-left: -24px;
 }
@@ -240,15 +236,27 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   flex: unset;
 }
 
+.rm-block-text span div {
+  display: inline;
+}
+
 .rm-pomodoro, .rm-pomodoro.running, .rm-pomodoro.break {
-  background-color: transparent !important;
   border: 1px solid #272727;
-  padding: 0;
+  padding: 0 4px 0 0;
   font-size: 16px;
   min-height: unset;
-  height: calc(1.5rem - 2px);
-  line-height: calc(1.5rem - 2px);
+  height: 16px;
+  line-height: 16px;
   border-radius: 0;
+  font-size: 12px;
+  background-color: #06D6A0 !important;
+  font-weight: normal;
+  position: relative;
+  top: -2px;
+}
+.block-highlight-blue .rm-pomodoro, .block-highlight-blue .rm-pomodoro.running, .block-highlight-blue .rm-pomodoro.break {
+  border-color: #fff;
+  color: #fff;
 }
 
 .rm-pomodoro.running {
@@ -259,7 +267,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 
 .rm-pomodoro.break {
-  background-color: #06D6A0 !important;
+  background-color: #bbb !important;
   border-color: #272727;
   color: #fff !important;
   font-weight: normal;
@@ -299,6 +307,34 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .bp3-icon-standard.bp3-icon-chevron-right.rm-mention-icon {
   color: #bbb;
+}
+
+.check-container {
+  border: none;
+  border-radius: 0;
+  background-color: #06D6A0;
+  border: 1px solid #272727;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+}
+.block-highlight-blue .check-container {
+  border-color: #fff;
+}
+.check-container input:checked + .checkmark {
+  border-radius: 0;
+  background-color: #bbb;
+}
+.check-container input:checked ~ span {
+  text-decoration: line-through;
+}
+.check-container .checkmark {
+  border: none;
+}
+.check-container .checkmark:after {
+  border-color: #272727;
+  top: 1.25px;
+  left: 4px;
 }
 
 /*# sourceMappingURL=roam.css.map */

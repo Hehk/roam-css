@@ -34,10 +34,6 @@
   padding: 0;
 }
 
-.check-container input:checked~.checkmark {
-  background-color: var(--color-black);
-}
-
 .rm-block__children.rm-level-0 {
   margin-left: -6 * $unit;
 }
