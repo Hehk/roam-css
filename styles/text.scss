@@ -88,3 +88,11 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   padding: 0;
   margin: 0;
 }
+
+.rm-bq {
+  background-color: $color-gray;
+  border: 1px solid $color-black;
+  font-size: $font-size;
+  padding: 2 * $unit;
+  text-align: justify;
+}

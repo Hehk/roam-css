@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html {
   font-size: 16px;
@@ -51,7 +51,7 @@ html {
 textarea.rm-block__input,
 .rm-block__input {
   margin: 0;
-  font-family: "Source Serif Pro";
+  font-family: "Playfair Display";
   font-size: 16px;
   color: #272727;
   line-height: 1.5rem;
@@ -61,14 +61,14 @@ textarea.rm-block__input,
 }
 .rm-heading-level-1 > .rm-block__self textarea.rm-block__input,
 .rm-heading-level-1 > .rm-block__self .rm-block__input {
-  font-family: "Source Serif Pro";
+  font-family: "Playfair Display";
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .rm-title-display, .rm-title-editing-display {
-  font-family: "Source Sans Pro";
+  font-family: "Playfair Display";
   font-size: 2rem;
   font-weight: bold;
   margin: 32px 0 !important;
@@ -79,7 +79,7 @@ textarea.rm-block__input,
   line-height: 2rem;
 }
 .rm-title-display textarea, .rm-title-editing-display textarea {
-  font-family: "Source Sans Pro";
+  font-family: "Playfair Display";
   font-size: 2rem;
   line-height: 2rem;
   height: 40px !important;
@@ -135,6 +135,14 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   margin: 0;
 }
 
+.rm-bq {
+  background-color: #bbb;
+  border: 1px solid #272727;
+  font-size: 16px;
+  padding: 8px;
+  text-align: justify;
+}
+
 .kanban-board {
   background-color: transparent;
 }
@@ -150,7 +158,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .kanban-title {
   border-color: #272727;
-  font-family: "Source Sans Pro";
+  font-family: "Playfair Display";
   font-weight: bold;
   text-align: left;
 }
@@ -185,7 +193,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   box-shadow: none;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-title {
-  font-family: "Source Serif Pro";
+  font-family: "Playfair Display";
   font-size: 16px;
   font-weight: normal;
   line-height: 2rem;
@@ -196,7 +204,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
   color: #272727;
-  font-family: "Source Serif Pro";
+  font-family: "Playfair Display";
   font-size: 16px;
   min-height: 2rem;
   line-height: 2rem;
@@ -216,7 +224,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   height: 4rem;
   line-height: 4rem;
   font-size: 2rem;
-  font-family: "Source Sans Pro";
+  font-family: "Playfair Display";
 }
 
 .bp3-popover {
@@ -289,11 +297,11 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 
 .rm-query-title-text {
-  font-family: "Source Sans Pro";
+  font-family: "Playfair Display";
 }
 
 .rm-reference-container .flex-h-box strong {
-  font-family: "Source Sans Pro";
+  font-family: "Playfair Display";
   font-size: 16px;
 }
 
@@ -303,11 +311,11 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .rm-ref-page-view-title {
   color: #272727;
-  font-family: "Source Serif Pro";
+  font-family: "Playfair Display";
 }
 
 .rm-zoom-item-content span {
-  font-family: "Source Serif Pro";
+  font-family: "Playfair Display";
   color: #bbb;
 }
 
