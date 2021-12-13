@@ -40,6 +40,10 @@ html {
   margin-left: -24px;
 }
 
+.rm-block-separator {
+  min-width: 0px;
+}
+
 .roam-block {
   padding: 0;
 }
@@ -336,6 +340,10 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   border-color: #272727;
   top: 1.25px;
   left: 4px;
+}
+
+.roam-app {
+  background-color: #FFFAF3;
 }
 
 /*# sourceMappingURL=roam.css.map */

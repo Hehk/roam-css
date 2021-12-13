@@ -37,3 +37,7 @@
 .rm-block__children.rm-level-0 {
   margin-left: -6 * $unit;
 }
+
+.rm-block-separator {
+  min-width: 0px;
+}
