@@ -1,11 +1,13 @@
 .kanban-board {
   background-color: transparent;
+  padding: 0;
 }
 .kanban-column {
   background-color: transparent;
 }
 .kanban-card {
   border: 1px solid $color-black;
+  background-color: $color-background;
   margin: 0px;
 }
 .kanban-title {

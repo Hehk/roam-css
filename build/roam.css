@@ -44,6 +44,10 @@ html {
   min-width: 0px;
 }
 
+.rm-full-width {
+  margin-right: 0;
+}
+
 .roam-block {
   padding: 0;
 }
@@ -145,6 +149,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .kanban-board {
   background-color: transparent;
+  padding: 0;
 }
 
 .kanban-column {
@@ -153,6 +158,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 .kanban-card {
   border: 1px solid #272727;
+  background-color: #FFFAF3;
   margin: 0px;
 }
 
