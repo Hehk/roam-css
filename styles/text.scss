@@ -41,14 +41,9 @@ textarea.rm-block__input,
 
 a, .rm-page-ref--link, .rm-page-ref {
   color: $color-black;
-  text-decoration: none;
-  background-image: linear-gradient($color-black, $color-black);
-  background-size: 1px 1px;
-  background-repeat: repeat-x;
-  background-position: 0% calc(100% - 0.1em);
-  /* Makes text overlap the underline */
-  text-shadow:  0 0.05em #fff, 0.05em 0.05em #fff, -0.05em 0.05em
- #fff, 0.17em 0.05em #fff, -0.17em 0.05em #fff, 0.17em 0 #fff, -0.17em 0 #fff;
+  text-decoration: underline;
+  text-shadow:  0 0.05em $color-background, 0.05em 0.05em $color-background, -0.05em 0.05em
+ $color-background, 0.17em 0.05em $color-background, -0.17em 0.05em $color-background, 0.17em 0 $color-background, -0.17em 0 $color-background;
   font-variant-numeric: lining-nums;
 }
 

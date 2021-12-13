@@ -91,13 +91,8 @@ textarea.rm-block__input,
 
 a, .rm-page-ref--link, .rm-page-ref {
   color: #272727;
-  text-decoration: none;
-  background-image: linear-gradient(#272727, #272727);
-  background-size: 1px 1px;
-  background-repeat: repeat-x;
-  background-position: 0% calc(100% - 0.1em);
-  /* Makes text overlap the underline */
-  text-shadow: 0 0.05em #fff, 0.05em 0.05em #fff, -0.05em 0.05em #fff, 0.17em 0.05em #fff, -0.17em 0.05em #fff, 0.17em 0 #fff, -0.17em 0 #fff;
+  text-decoration: underline;
+  text-shadow: 0 0.05em #FFFAF3, 0.05em 0.05em #FFFAF3, -0.05em 0.05em #FFFAF3, 0.17em 0.05em #FFFAF3, -0.17em 0.05em #FFFAF3, 0.17em 0 #FFFAF3, -0.17em 0 #FFFAF3;
   font-variant-numeric: lining-nums;
 }
 
@@ -355,6 +350,57 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   border-color: #272727;
   top: 1.25px;
   left: 4px;
+}
+
+.roam-body .roam-app .roam-sidebar-container {
+  background-color: transparent;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row {
+  padding: 0 24px;
+  margin: 32px 0;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row .rm-db-title {
+  color: #272727;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  padding: 0 24px;
+  margin-bottom: 8px;
+  color: #272727;
+  font-family: "Playfair Display";
+  text-transform: uppercase;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button div {
+  font-family: "Playfair Display";
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .icon {
+  display: none;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
+  padding: 0 !important;
+  padding-top: 24px !important;
+  border-top: 0;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:first-child, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:nth-child(2), .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:nth-child(3) {
+  display: none;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages a:hover {
+  text-shadow: none;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages a .page {
+  padding: 0 24px;
+  color: #272727;
+  font-family: "Playfair Display";
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+#roam-sidebar-logo {
+  display: none;
 }
 
 .roam-app {

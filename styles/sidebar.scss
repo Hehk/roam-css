@@ -1,0 +1,69 @@
+.roam-body .roam-app .roam-sidebar-container {
+  background-color: transparent;
+  $sidebar-padding: 0 6 * $unit;
+
+  .roam-sidebar-content {
+    .top-row {
+      padding: $sidebar-padding;
+      margin: 8 * $unit 0;
+      // padding-top: 4 * $unit;
+
+      .rm-db-title {
+        color: $color-black;
+        font-family: $font-family;
+        font-size: $font-size-heading;
+        height: 2rem;
+        line-height: 2rem;
+        padding: 0;
+      }
+    }
+
+    .log-button {
+      padding: $sidebar-padding;
+      margin-bottom: 2 * $unit;
+      color: $color-black;
+      font-family: $font-family;
+      text-transform: uppercase;
+      div {
+        font-family: $font-family;
+      }
+
+      .icon {
+        display: none;
+      }
+    }
+
+    .starred-pages-wrapper {
+      padding: 0 !important;
+      padding-top: 6 * $unit !important;
+      border-top: 0;
+      
+      // The first three children are used for padding and a border line
+      &>div:first-child,
+      &>div:nth-child(2),
+      &>div:nth-child(3) {
+        display: none;
+      }
+
+      .starred-pages {
+        a {
+          &:hover {
+            text-shadow: none;
+          }
+          .page {
+            padding: $sidebar-padding;
+            color: $color-black;
+            font-family: $font-family;
+            margin-bottom: $unit * 2;
+            text-decoration: underline;
+          }
+      }
+      }
+    }
+  }
+}
+
+// Hiding the ugly roam logo
+#roam-sidebar-logo {
+  display: none;
+}
