@@ -1,5 +1,25 @@
 # Roam Styles
 
+I have been working on this for a couple days, everything is going to be verry hacky / half done. Expect typos and bad
+edges.
+
+## Goals
+
+There are 2 main goal, a nice looking serif interface and as little movement as possible. I personally really love the
+look of a text dense website with a serif font, so making the notes app that I spend most of my time in like that would
+be great. For the lack of motion, there are many block in roam that very in size when typing in them versus looking at
+them; I find it really distracting and not "delightful", having an extremely consistent editing vs viewing experience is
+just pleasing to me.
+
+Other smaller goals.
+  - Look good with a small width
+  - Remove most color (I keep a little for things that I think need attention) https://groups.google.com/g/golang-nuts/c/hJHCAaiL0so/m/kG3BHV6QFfIJ
+  - Remove clutter, the indent guides and bullet points for blocks just look ugly to me. They are still there
+    functionally but I don't need to see them to know I can close/move a block.
+  - 
+
+## Setup
+
 This is my css config for roam.
 
 Import it with:

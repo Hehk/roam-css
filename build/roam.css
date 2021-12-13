@@ -61,9 +61,10 @@ textarea.rm-block__input,
 }
 .rm-heading-level-1 > .rm-block__self textarea.rm-block__input,
 .rm-heading-level-1 > .rm-block__self .rm-block__input {
-  font-family: "Source Sans Pro";
+  font-family: "Source Serif Pro";
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .rm-title-display, .rm-title-editing-display {

@@ -14,9 +14,10 @@ textarea.rm-block__input,
   padding: $unit 0;
 
   .rm-heading-level-1>.rm-block__self & {
-    font-family: $font-family-heading;
+    font-family: $font-family;
     font-size: $font-size;
-    font-weight: bold;
+    font-weight: normal;
+    text-transform: uppercase;
   }
 }
 
