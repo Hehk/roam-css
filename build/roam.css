@@ -77,7 +77,6 @@ textarea.rm-block__input,
   font-weight: bold;
   margin: 32px 0 !important;
   line-height: 2rem;
-  height: 2rem;
 }
 .rm-title-display span, .rm-title-editing-display span {
   line-height: 2rem;
@@ -401,6 +400,29 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 
 #roam-sidebar-logo {
   display: none;
+}
+
+#right-sidebar > div.flex-h-box:nth-child(2) {
+  display: none;
+}
+
+#roam-right-sidebar-content .sidebar-content div .rm-sidebar-window {
+  position: relative;
+  border-bottom: none !important;
+}
+#roam-right-sidebar-content .sidebar-content div .rm-sidebar-window .window-headers {
+  padding: 32px 0 0 0;
+}
+#roam-right-sidebar-content .sidebar-content div .rm-sidebar-window .window-headers div {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  color: #272727;
+}
+#roam-right-sidebar-content .sidebar-content div .rm-sidebar-window .rm-sidebar-outline-wrapper {
+  margin-left: 0;
+}
+#roam-right-sidebar-content .sidebar-content div .rm-sidebar-window .rm-sidebar-outline-wrapper .rm-title-display {
+  margin-top: 8px !important;
 }
 
 .roam-app {

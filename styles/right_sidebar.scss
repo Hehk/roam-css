@@ -1,0 +1,31 @@
+#right-sidebar {
+
+  // Getting rid of the close sidebar button
+  // I tried to be as specific as possible with this selector
+  &>div.flex-h-box:nth-child(2) {
+    display: none;
+  }
+}
+
+#roam-right-sidebar-content {
+  .sidebar-content div .rm-sidebar-window {
+    position: relative;
+    border-bottom: none !important;
+    .window-headers {
+      padding: $unit * 8 0 0 0;
+
+      div {
+        font-family: $font-family;
+        font-size: $font-size;
+        color: $color-black;
+      }
+    }
+
+    .rm-sidebar-outline-wrapper {
+      margin-left: 0;
+      .rm-title-display {
+        margin-top: 2 * $unit !important;
+      }
+    }
+  }
+}
