@@ -11,7 +11,7 @@ html {
 
 /* Fixing the bullets to disappear by default and not take up horizontal space */
 .roam-body .roam-app .roam-main .roam-article {
-  padding: 0;
+  padding: 0 16px;
 }
 
 .rm-title-display, .rm-title-editing-display {
@@ -48,6 +48,18 @@ html {
   margin-right: 0;
 }
 
+.rm-article-wrapper {
+  overflow-x: hidden;
+}
+
+.rm-zoom.zoom-path-view {
+  margin-top: 32px;
+}
+
+.rm-zoom.zoom-path-view .rm-zoom-mask {
+  background-color: #FFFAF3;
+}
+
 .roam-block {
   padding: 0;
 }
@@ -59,9 +71,14 @@ textarea.rm-block__input,
   font-size: 16px;
   color: #272727;
   line-height: 1.5rem;
-  min-height: 1.5rem;
+  min-height: 2rem;
   display: block;
   padding: 4px 0;
+  letter-spacing: 0px;
+}
+textarea.rm-block__input span,
+.rm-block__input span {
+  letter-spacing: 0px;
 }
 .rm-heading-level-1 > .rm-block__self textarea.rm-block__input,
 .rm-heading-level-1 > .rm-block__self .rm-block__input {
@@ -201,6 +218,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 .rm-find-or-create-wrapper .rm-menu-item {
   padding: 4px 8px;
   border-radius: 0;
+  background-color: #FFFAF3;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
   color: #272727;
@@ -218,6 +236,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 
 #find-or-create-input {
+  background-color: #FFFAF3;
   border-radius: 0;
   border: 1px solid #272727;
   box-shadow: none;
@@ -237,12 +256,14 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   top: 0px;
   z-index: 2;
   transition: 0.25s;
+  background-color: transparent;
 }
 
 .rm-topbar {
   position: relative;
   top: -45px;
-  background-color: #fff;
+  background-color: #FFFAF3;
+  border-bottom: 1px solid #272727;
 }
 
 .rm-files-dropzone:hover .rm-topbar {
@@ -305,6 +326,11 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   font-size: 16px;
 }
 
+.rm-reference-container + div strong {
+  font-family: "Playfair Display";
+  font-size: 16px;
+}
+
 .rm-reference-item {
   background-color: transparent;
 }
@@ -352,7 +378,7 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 
 .roam-body .roam-app .roam-sidebar-container {
-  background-color: transparent;
+  background-color: #FFFAF3;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row {
   padding: 0 24px;
@@ -387,11 +413,14 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:first-child, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:nth-child(2), .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:nth-child(3) {
   display: none;
 }
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages {
+  padding: 8px;
+}
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages a:hover {
   text-shadow: none;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages a .page {
-  padding: 0 24px;
+  padding: 0 16px;
   color: #272727;
   font-family: "Playfair Display";
   margin-bottom: 8px;

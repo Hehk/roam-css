@@ -4,11 +4,13 @@
   top: 0px;
   z-index: 2;
   transition: $transition;
+  background-color: transparent;
 }
 .rm-topbar {
   position: relative;
   top: -45px;
-  background-color: #fff;
+  background-color: $color-background;
+  border-bottom: 1px solid $color-black;
 }
 .rm-files-dropzone:hover .rm-topbar {
   top: 0px;

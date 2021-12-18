@@ -9,9 +9,13 @@ textarea.rm-block__input,
   font-size: $font-size;
   color: $color-black;
   line-height: 1.5rem;
-  min-height: 1.5rem;
+  min-height: 2rem;
   display: block;
   padding: $unit 0;
+  letter-spacing: 0px;
+  span {
+    letter-spacing: 0px;
+  }
 
   .rm-heading-level-1>.rm-block__self & {
     font-family: $font-family;

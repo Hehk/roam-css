@@ -1,5 +1,5 @@
 .roam-body .roam-app .roam-sidebar-container {
-  background-color: transparent;
+  background-color: $color-background;
   $sidebar-padding: 0 6 * $unit;
 
   .roam-sidebar-content {
@@ -46,18 +46,19 @@
       }
 
       .starred-pages {
+        padding: 2 * $unit;
         a {
           &:hover {
             text-shadow: none;
           }
           .page {
-            padding: $sidebar-padding;
+            padding: 0 4 * $unit; 
             color: $color-black;
             font-family: $font-family;
             margin-bottom: $unit * 2;
             text-decoration: underline;
           }
-      }
+        }
       }
     }
   }

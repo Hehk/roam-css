@@ -3,6 +3,13 @@
   font-size: $font-size;
 }
 
+.rm-reference-container + div {
+  strong {
+    font-family: $font-family-heading;
+    font-size: $font-size;
+  }
+}
+
 .rm-reference-item {
   background-color: transparent;
 }

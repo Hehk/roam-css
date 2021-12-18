@@ -9,7 +9,7 @@
 
 /* Fixing the bullets to disappear by default and not take up horizontal space */
 .roam-body .roam-app .roam-main .roam-article {
-  padding: 0;
+  padding: 0 4 * $unit;
 }
 .rm-title-display, .rm-title-editing-display {
   padding-left: $unit * 4;
@@ -45,3 +45,14 @@
   margin-right: 0;
 }
 
+.rm-article-wrapper {
+  overflow-x: hidden;
+}
+
+.rm-zoom.zoom-path-view {
+  margin-top: 8 * $unit;
+}
+
+.rm-zoom.zoom-path-view .rm-zoom-mask {
+  background-color: $color-background;
+}

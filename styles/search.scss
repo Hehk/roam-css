@@ -40,6 +40,7 @@
   .rm-menu-item {
     padding: 4px 8px;
     border-radius: 0;
+    background-color: $color-background;
   }
   .rm-menu-item .rm-search-list-item {
     color: $color-black;
@@ -60,6 +61,7 @@
 }
 
 #find-or-create-input {
+  background-color: $color-background;
   border-radius: 0;
   border: 1px solid $color-black;
   box-shadow: none;
