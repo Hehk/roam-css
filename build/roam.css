@@ -454,6 +454,15 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   margin-top: 8px !important;
 }
 
+.rm-video-player__comment-button {
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.rm-video-player__comment-button:hover {
+  opacity: 0.8;
+}
+
 .roam-app {
   background-color: #FFFAF3;
 }
