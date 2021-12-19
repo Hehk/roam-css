@@ -1,9 +1,11 @@
 .rm-video-player__comment-button {
-  top: 0;
-  bottom: 0;
   opacity: 0;
 
   &:hover {
     opacity: 0.8;
   }
+}
+
+.rm-video-player__container {
+  margin-right: 0;
 }

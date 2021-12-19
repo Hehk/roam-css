@@ -455,12 +455,14 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
 }
 
 .rm-video-player__comment-button {
-  top: 0;
-  bottom: 0;
   opacity: 0;
 }
 .rm-video-player__comment-button:hover {
   opacity: 0.8;
+}
+
+.rm-video-player__container {
+  margin-right: 0;
 }
 
 .roam-app {
