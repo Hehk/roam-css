@@ -17,7 +17,7 @@ textarea.rm-block__input,
     letter-spacing: 0px;
   }
 
-  .rm-heading-level-1>.rm-block__self & {
+  .rm-heading-level-1 > .rm-block__self & {
     font-family: $font-family;
     font-size: $font-size;
     font-weight: normal;
@@ -25,7 +25,8 @@ textarea.rm-block__input,
   }
 }
 
-.rm-title-display, .rm-title-editing-display {
+.rm-title-display,
+.rm-title-editing-display {
   font-family: $font-family-heading;
   font-size: $font-size-heading;
   font-weight: bold;
@@ -38,26 +39,34 @@ textarea.rm-block__input,
     font-family: $font-family-heading;
     font-size: $font-size-heading;
     line-height: $font-size-heading;
-    height: 10 * $unit !important;
+    max-height: (2 * 8) * $unit !important;
   }
 }
 
-a, .rm-page-ref--link, .rm-page-ref {
+a,
+.rm-page-ref--link,
+.rm-page-ref {
   color: $color-black;
   text-decoration: underline;
-  text-shadow:  0 0.05em $color-background, 0.05em 0.05em $color-background, -0.05em 0.05em
- $color-background, 0.17em 0.05em $color-background, -0.17em 0.05em $color-background, 0.17em 0 $color-background, -0.17em 0 $color-background;
+  text-shadow: 0 0.05em $color-background, 0.05em 0.05em $color-background,
+    -0.05em 0.05em $color-background, 0.17em 0.05em $color-background,
+    -0.17em 0.05em $color-background, 0.17em 0 $color-background,
+    -0.17em 0 $color-background;
   font-variant-numeric: lining-nums;
 }
 
-textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-ref--link::selection, .rm-page-ref::selection {
+textarea::selection,
+.roam-block::selection,
+.roam-block a::selection,
+.rm-page-ref--link::selection,
+.rm-page-ref::selection {
   background-color: $color-black;
   color: $color-white;
   text-shadow: none;
 }
 
 .block-highlight-blue textarea.rm-block__input,
-.block-highlight-blue .rm-block__input>span,
+.block-highlight-blue .rm-block__input > span,
 .block-highlight-blue .roam-block a,
 .block-highlight-blue .rm-page-ref--link,
 .block-highlight-blue .rm-page-ref {
@@ -71,7 +80,8 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   border-radius: 0;
 }
 
-.rm-page-ref--link:hover, rm-page-ref:hover {
+.rm-page-ref--link:hover,
+rm-page-ref:hover {
   text-decoration: none;
 }
 

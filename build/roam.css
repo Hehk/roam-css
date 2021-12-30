@@ -88,31 +88,40 @@ textarea.rm-block__input span,
   text-transform: uppercase;
 }
 
-.rm-title-display, .rm-title-editing-display {
+.rm-title-display,
+.rm-title-editing-display {
   font-family: "Playfair Display";
   font-size: 2rem;
   font-weight: bold;
   margin: 32px 0 !important;
   line-height: 2rem;
 }
-.rm-title-display span, .rm-title-editing-display span {
+.rm-title-display span,
+.rm-title-editing-display span {
   line-height: 2rem;
 }
-.rm-title-display textarea, .rm-title-editing-display textarea {
+.rm-title-display textarea,
+.rm-title-editing-display textarea {
   font-family: "Playfair Display";
   font-size: 2rem;
   line-height: 2rem;
-  height: 40px !important;
+  max-height: 64px !important;
 }
 
-a, .rm-page-ref--link, .rm-page-ref {
+a,
+.rm-page-ref--link,
+.rm-page-ref {
   color: #272727;
   text-decoration: underline;
   text-shadow: 0 0.05em #FFFAF3, 0.05em 0.05em #FFFAF3, -0.05em 0.05em #FFFAF3, 0.17em 0.05em #FFFAF3, -0.17em 0.05em #FFFAF3, 0.17em 0 #FFFAF3, -0.17em 0 #FFFAF3;
   font-variant-numeric: lining-nums;
 }
 
-textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-ref--link::selection, .rm-page-ref::selection {
+textarea::selection,
+.roam-block::selection,
+.roam-block a::selection,
+.rm-page-ref--link::selection,
+.rm-page-ref::selection {
   background-color: #272727;
   color: #fff;
   text-shadow: none;
@@ -135,7 +144,8 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   border-radius: 0;
 }
 
-.rm-page-ref--link:hover, rm-page-ref:hover {
+.rm-page-ref--link:hover,
+rm-page-ref:hover {
   text-decoration: none;
 }
 
@@ -214,6 +224,17 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   font-size: 16px;
   font-weight: normal;
   line-height: 2rem;
+}
+.rm-find-or-create-wrapper .rm-find-or-create__menu > div:first-child:not(.rm-menu-item) {
+  background-color: #FFFAF3;
+  font-family: "Playfair Display";
+  color: #272727 !important;
+}
+.rm-find-or-create-wrapper .rm-find-or-create__menu > div:first-child:not(.rm-menu-item):before {
+  content: "< ";
+}
+.rm-find-or-create-wrapper .rm-find-or-create__menu > div:first-child:not(.rm-menu-item):after {
+  content: " >";
 }
 .rm-find-or-create-wrapper .rm-menu-item {
   padding: 4px 8px;
@@ -431,6 +452,9 @@ textarea::selection, .roam-block::selection, .roam-block a::selection, .rm-page-
   display: none;
 }
 
+#right-sidebar {
+  padding-top: 0;
+}
 #right-sidebar > div.flex-h-box:nth-child(2) {
   display: none;
 }

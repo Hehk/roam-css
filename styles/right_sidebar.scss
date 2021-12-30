@@ -1,8 +1,9 @@
 #right-sidebar {
+  padding-top: 0;
 
   // Getting rid of the close sidebar button
   // I tried to be as specific as possible with this selector
-  &>div.flex-h-box:nth-child(2) {
+  & > div.flex-h-box:nth-child(2) {
     display: none;
   }
 }

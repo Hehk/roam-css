@@ -13,7 +13,7 @@
   }
 
   .bp3-input-group .bp3-input:not(:first-child) {
-    padding-left: 8px;  
+    padding-left: 8px;
   }
   .bp3-transition-container {
     top: calc(200px + 4rem) !important;
@@ -37,6 +37,20 @@
     line-height: 2rem;
   }
 
+  .rm-find-or-create__menu {
+    > div:first-child:not(.rm-menu-item) {
+      background-color: $color-background;
+      font-family: $font-family;
+      color: $color-black !important;
+
+      &:before {
+        content: "< ";
+      }
+      &:after {
+        content: " >";
+      }
+    }
+  }
   .rm-menu-item {
     padding: 4px 8px;
     border-radius: 0;
@@ -74,5 +88,3 @@
 .bp3-popover {
   box-shadow: none;
 }
-
-
